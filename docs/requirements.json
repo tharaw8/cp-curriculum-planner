@@ -1,0 +1,120 @@
+{
+  "curriculum_version": "2566",
+  "total_credits_required": 138,
+  "categories": [
+    {
+      "id": "gen_ed",
+      "name_th": "ศึกษาทั่วไป",
+      "credits_required": 30,
+      "type": "min_credits_from_pool"
+    },
+    {
+      "id": "science_math",
+      "name_th": "พื้นฐานคณิต-วิทย์",
+      "credits_required": 21,
+      "type": "fixed_list"
+    },
+    {
+      "id": "eng_foundation",
+      "name_th": "พื้นฐานวิศวกรรม",
+      "credits_required": 11,
+      "type": "fixed_list"
+    },
+    {
+      "id": "major_core",
+      "name_th": "แกนระดับสาขาวิชา",
+      "credits_required": 40,
+      "type": "fixed_list"
+    },
+    {
+      "id": "major_elective_required",
+      "name_th": "บังคับเลือก (Approved Elective)",
+      "credits_required": 6,
+      "type": "choose_n_from_pool"
+    },
+    {
+      "id": "skill_21st_century",
+      "name_th": "ทักษะสำหรับศตวรรษที่ 21",
+      "credits_required": 6,
+      "type": "choose_n_from_pool"
+    },
+    {
+      "id": "major_elective",
+      "name_th": "วิชาเลือก",
+      "credits_required": 18,
+      "type": "choose_n_from_pool",
+      "overflow_from": ["major_elective_required"]
+    },
+    {
+      "id": "free_elective",
+      "name_th": "วิชาเลือกเสรี",
+      "credits_required": 6,
+      "type": "any_course",
+      "note": "นับหน่วยกิตอย่างเดียว วิชาที่ถูกใช้ในหมวดอื่นแล้วห้ามนำมานับซ้ำ"
+    }
+  ],
+  "honors": {
+    "rank_1": {
+      "min_cumulative_gpa": 3.6,
+      "no_f_grade": true,
+      "no_u_grade": true,
+      "max_duration_years": 4
+    },
+    "rank_2": {
+      "min_cumulative_gpa": 3.25,
+      "no_f_grade": true,
+      "no_u_grade": true,
+      "max_duration_years": 4
+    }
+  },
+  "academic_probation": {
+    "source": "ข้อบังคับจุฬาฯ ปริญญาตรี + ข้อมูลเพิ่มเติมจากผู้ใช้",
+    "statuses": [
+      {
+        "id": "normal",
+        "name_th": "สภาพปกติ",
+        "condition": "is_first_semester OR cumulative_gpa >= 2.00"
+      },
+      {
+        "id": "probation_high",
+        "name_th": "วิทยาทัณฑ์ (โปรสูง)",
+        "condition": "cumulative_gpa >= 1.80 AND cumulative_gpa <= 1.99"
+      },
+      {
+        "id": "probation_low",
+        "name_th": "วิทยาทัณฑ์ (โปรต่ำ)",
+        "condition": "cumulative_gpa >= 1.50 AND cumulative_gpa <= 1.79"
+      },
+      {
+        "id": "retired",
+        "name_th": "พ้นสภาพนิสิต",
+        "condition": "see retirement_rules"
+      }
+    ],
+    "retirement_rules": [
+      {
+        "id": "below_minimum",
+        "description": "GPAX ต่ำกว่า 1.50 เมื่อไหร่ก็ retire ทันที",
+        "trigger": "cumulative_gpa < 1.50"
+      },
+      {
+        "id": "low_after_probation",
+        "description": "ติดโปร (ต่ำหรือสูง) แล้วเทอมถัดมาติดโปรต่ำ 2 เทอมติดต่อกัน",
+        "trigger": "was_on_probation_prev_term AND probation_low for next 2 consecutive terms",
+        "interpretation_note": "ตีความว่า: เทอม N ติดโปร (สูงหรือต่ำ) แล้วเทอม N+1 และ N+2 ต้องเป็นโปรต่ำทั้งคู่ ถึงจะ trigger -- ถ้าตีความผิดช่วยแก้ทีหลังได้"
+      },
+      {
+        "id": "prolonged_probation",
+        "description": "ติดโปร (ต่ำหรือสูงสลับกันก็ได้) รวม 5 เทอม",
+        "trigger": "count of terms with status in [probation_low, probation_high] reaches 5",
+        "interpretation_note": "นับสะสม ไม่ต้องติดต่อกันเป๊ะ -- ถ้าจริง ๆ ต้องเป็น 5 เทอมติดต่อกันเท่านั้น ช่วยบอกทีหลัง"
+      },
+      {
+        "id": "max_duration_exceeded",
+        "description": "เรียนเกิน 8 ปีการศึกษา ถือว่าไม่จบ",
+        "trigger": "years_enrolled > 8"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,328 @@
+{
+  "2110101": {
+    "code": "2110101",
+    "name_en": "Computer Programming",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "eng_foundation",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2110111": {
+    "code": "2110111",
+    "name_en": "Exploration of Engineering World",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2301107": {
+    "code": "2301107",
+    "name_en": "Calculus I",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2304103": {
+    "code": "2304103",
+    "name_en": "General Physics I",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2304183": {
+    "code": "2304183",
+    "name_en": "General Physics Laboratory I",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2302127": {
+    "code": "2302127",
+    "name_en": "General Chemistry",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "5500111": {
+    "code": "5500111",
+    "name_en": "Experiential English I",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": [],
+    "default_term": "y1-t1"
+  },
+  "2110215": {
+    "code": "2110215",
+    "name_en": "Programming Methodology",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110101"],
+    "default_term": "y1-t2"
+  },
+  "2110221": {
+    "code": "2110221",
+    "name_en": "Computer Engineering Essentials",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": [],
+    "default_term": "y1-t2"
+  },
+  "2301108": {
+    "code": "2301108",
+    "name_en": "Calculus II",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": ["2301107"],
+    "default_term": "y1-t2"
+  },
+  "2304104": {
+    "code": "2304104",
+    "name_en": "General Physics II",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": ["2304103"],
+    "default_term": "y1-t2"
+  },
+  "2304184": {
+    "code": "2304184",
+    "name_en": "General Physics Laboratory II",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": ["2304183"],
+    "default_term": "y1-t2"
+  },
+  "2302163": {
+    "code": "2302163",
+    "name_en": "General Chemistry Laboratory",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y1-t2"
+  },
+  "5500112": {
+    "code": "5500112",
+    "name_en": "Experiential English II",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": ["5500111"],
+    "default_term": "y1-t2"
+  },
+  "2110200": {
+    "code": "2110200",
+    "name_en": "Discrete Structures",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t1"
+  },
+  "2110211": {
+    "code": "2110211",
+    "name_en": "Introduction to Data Structures",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110101"],
+    "default_term": "y2-t1"
+  },
+  "2603284": {
+    "code": "2603284",
+    "name_en": "Statistics for Physical Sciences",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "science_math",
+    "prerequisites": [],
+    "default_term": "y2-t1"
+  },
+  "2110251": {
+    "code": "2110251",
+    "name_en": "Digital Logic",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t1"
+  },
+  "2110263": {
+    "code": "2110263",
+    "name_en": "Digital Logic Laboratory I",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t1"
+  },
+  "2110201": {
+    "code": "2110201",
+    "name_en": "Computer Engineering Mathematics I",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "eng_foundation",
+    "prerequisites": [],
+    "default_term": "y2-t2"
+  },
+  "2110327": {
+    "code": "2110327",
+    "name_en": "Algorithm Design and Analysis",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110200", "2110211"],
+    "default_term": "y2-t2"
+  },
+  "2110322": {
+    "code": "2110322",
+    "name_en": "Database Systems",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t2"
+  },
+  "2110313": {
+    "code": "2110313",
+    "name_en": "Operating Systems",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110211"],
+    "default_term": "y2-t2"
+  },
+  "2110352": {
+    "code": "2110352",
+    "name_en": "Computer Systems Architecture",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t2"
+  },
+  "2110363": {
+    "code": "2110363",
+    "name_en": "Hardware Synthesis Laboratory I",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y2-t2"
+  },
+  "5500208": {
+    "code": "5500208",
+    "name_en": "Communicative Presentation Skills",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": [],
+    "default_term": "y2-t2"
+  },
+  "2110203": {
+    "code": "2110203",
+    "name_en": "Computer Engineering Mathematics II",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "eng_foundation",
+    "prerequisites": [],
+    "default_term": "y3-t1"
+  },
+  "2110423": {
+    "code": "2110423",
+    "name_en": "Software Engineering",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y3-t1"
+  },
+  "2110318": {
+    "code": "2110318",
+    "name_en": "Distributed Systems",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y3-t1"
+  },
+  "2110471": {
+    "code": "2110471",
+    "name_en": "Computer Networks",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y3-t1"
+  },
+  "2110366": {
+    "code": "2110366",
+    "name_en": "Embedded Systems Laboratory I",
+    "credits": 1,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110263"],
+    "default_term": "y3-t1"
+  },
+  "2110426": {
+    "code": "2110426",
+    "name_en": "Software Engineering Laboratory",
+    "credits": 1,
+    "counts_gpa": false,
+    "grading_type": "S_U",
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y3-t1"
+  },
+  "5500308": {
+    "code": "5500308",
+    "name_en": "Technical Writing in English",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "gen_ed",
+    "prerequisites": [],
+    "default_term": "y3-t2"
+  },
+  "2100301": {
+    "code": "2100301",
+    "name_en": "Engineering Practice",
+    "credits": 2,
+    "counts_gpa": false,
+    "grading_type": "S_U",
+    "category": "eng_foundation",
+    "prerequisites": [],
+    "default_term": "y3-t2"
+  },
+  "2110488": {
+    "code": "2110488",
+    "name_en": "Capstone Project I",
+    "credits": 2,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": [],
+    "default_term": "y4-t1"
+  },
+  "2110489": {
+    "code": "2110489",
+    "name_en": "Capstone Project II",
+    "credits": 3,
+    "counts_gpa": true,
+    "category": "major_core",
+    "prerequisites": ["2110488"],
+    "default_term": "y4-t2"
+  }
+}
